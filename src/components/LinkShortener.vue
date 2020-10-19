@@ -67,7 +67,7 @@ export default {
       }
     },
     shortenLink() {
-      var tkn = "e26abcf25fc774a193088e518f0ccdc5f0e9379d";
+      var tkn = process.env.VUE_APP_BITLY;
       fetch("https://api-ssl.bitly.com/v4/shorten", {
         method: "POST",
         headers: {
